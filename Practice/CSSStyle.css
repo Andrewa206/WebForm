@@ -1,0 +1,9 @@
+﻿/*table {border:2px solid black; font-family:'Comic Sans MS';}
+th { background-color:#ffd800; width:150px;}
+tr:nth-child(2n+1) { background-color: #CC9999; width:150px;}
+tr:nth-child(2n) { background-color: #77d3d3;  width:150px;}*/
+
+table.newTable {border:2px solid black; font-family:'Comic Sans MS';}
+tr.newTH { background-color:#ffd800; width:150px;}
+tr.newRow1 { background-color: #CC9999; width:150px;}
+tr.newRow2 { background-color: #77d3d3;  width:150px;}
