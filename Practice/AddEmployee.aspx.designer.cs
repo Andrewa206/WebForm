@@ -10,7 +10,7 @@
 namespace Practice {
     
     
-    public partial class NewEmployee {
+    public partial class AddEmployee {
         
         /// <summary>
         /// form1 control.
@@ -22,31 +22,31 @@ namespace Practice {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// name control.
+        /// Getname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox name;
+        protected global::System.Web.UI.WebControls.TextBox Getname;
         
         /// <summary>
-        /// id control.
+        /// GetId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox id;
+        protected global::System.Web.UI.WebControls.TextBox GetId;
         
         /// <summary>
-        /// manager control.
+        /// GetSalary control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox manager;
+        protected global::System.Web.UI.WebControls.TextBox GetSalary;
         
         /// <summary>
         /// DDList control.
@@ -56,15 +56,6 @@ namespace Practice {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList DDList;
-        
-        /// <summary>
-        /// salary control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox salary;
         
         /// <summary>
         /// SaveBtn control.

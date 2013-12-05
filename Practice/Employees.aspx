@@ -1,36 +1,41 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="NewEmployee.aspx.cs" Inherits="Practice.Employees" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Employees.aspx.cs" Inherits="Practice.Employees1" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <link rel="stylesheet" href="cssstyle.css" />
+    <link rel="stylesheet" href="CSSStyle.css" />
 </head>
 <body>
-    <form  runat="server">
+    <form id="form1" runat="server">
         <div>
-             
-            <asp:GridView ID="gridView" runat="server" AutoGenerateColumns="false" CssClass="newTable" 
+
+
+            <asp:GridView ID="GetgridView" runat="server" AutoGenerateColumns="false" CssClass="newTable"
                 RowStyle-CssClass="newRow1" HeaderStyle-CssClass="newTH" AlternatingRowStyle-CssClass="newRow2">
                 <Columns>
-                  <asp:BoundField DataField="Name" HeaderText="Name"  />
+                    <asp:BoundField DataField="Name" HeaderText="Name" />
                     <asp:BoundField DataField="ID" HeaderText="ID" />
-                    <asp:BoundField DataField="Manager.name" HeaderText="Manager"  />
+                    <asp:BoundField DataField="Manager.name" HeaderText="Manager" />
                     <asp:BoundField DataField="Salary" HeaderText="Salary" />
                     <asp:TemplateField HeaderText="Edit/Delete">
                         <ItemTemplate>
-                            <asp:Button ID="EditBtn" runat="server" CommandName="EditBtn" Text="Edit" />
-                            <asp:Button ID="DeleteBtn" runat="server" CommandName="DeleteBtn" Text="Delete" />
-                        </ItemTemplate> 
-                        <asp:ItemTemplate   />
+                            <asp:Button ID="EditBtn" runat="server" Text="Edit" CommandName="EditBtn"
+                                CommandArgument="<%# ((GridViewRow)Container).RowIndex %>" />
+                            <asp:Button ID="DeleteBtn" runat="server" Text="Delete" CommandName="DeleteBtn"
+                                CommandArgument='<%#((GridViewRow)Container).RowIndex %>' />
+                        </ItemTemplate>
+                        <asp:ItemTemplate />
                     </asp:TemplateField>
-                    
+
                 </Columns>
-                
+
             </asp:GridView>
 
-            <asp:HyperLink  runat="server" NavigateUrl="~/NewEmployee.aspx">Add new Employee</asp:HyperLink>
+            <asp:HyperLink runat="server" NavigateUrl="~/AddEmployee.aspx">Add new Employee</asp:HyperLink>
+
+
         </div>
     </form>
 </body>

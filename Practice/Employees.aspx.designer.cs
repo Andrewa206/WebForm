@@ -10,7 +10,7 @@
 namespace Practice {
     
     
-    public partial class Employees {
+    public partial class Employees1 {
         
         /// <summary>
         /// form1 control.
@@ -22,21 +22,12 @@ namespace Practice {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// gridView control.
+        /// GetgridView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gridView;
-        
-        /// <summary>
-        /// link control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink link;
+        protected global::System.Web.UI.WebControls.GridView GetgridView;
     }
 }

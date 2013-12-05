@@ -7,20 +7,25 @@ using System.Web.UI.WebControls;
 
 namespace Practice
 {
-    public partial class Employees : System.Web.UI.Page
+    public partial class Employees1 : System.Web.UI.Page
     {
+        private EmployeeService es;
         protected void Page_Load(object sender, EventArgs e)
         {
-            var MyList=new EmployeeService().GetAll();
-            //repeater1.DataSource = list;
-            //repeater1.DataBind();
-
-            gridView.DataSource = MyList;
-            gridView.DataBind();
-
-           
-
-           
+            if (Session["list"] == null)
+            {
+                es = new EmployeeService();
+                List<Employee> EmList = es.GetAll();
+                Session["list"] = EmList;
+            }
+            if (!IsPostBack)
+            {
+                GetgridView.DataSource = Session["list"];
+                GetgridView.DataBind();
+            }
         }
+
+        
+
     }
 }
