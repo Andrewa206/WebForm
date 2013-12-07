@@ -10,7 +10,7 @@
 namespace Practice {
     
     
-    public partial class Employees1 {
+    public partial class Employees {
         
         /// <summary>
         /// form1 control.
